@@ -19,11 +19,29 @@ function saveReview(review, reviews) {
   }
 }
 
+function calculatePageCount(title) {
+  var pageCount = 20 * title.length;
+  return pageCount;
+}
+
+function writeBook(title, mainCharacter, genre) {
+  return {
+    title,
+    mainCharacter,
+    pageCount: calculatePageCount(title),
+    genre
+  }
+}
+
+function editBook(book) {
+  book.pageCount = book.pageCount * .75;
+}
+
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
-  // writeBook
-  // editBook
+  calculatePageCount,
+  writeBook,
+  editBook
 }
