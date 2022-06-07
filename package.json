@@ -19,7 +19,8 @@
   "homepage": "https://github.com/turingschool-examples/js-fun-at-the-library#readme",
   "dependencies": {
     "chai": "^4.3.4",
-    "mocha": "^9.2.2"
+    "mocha": "^9.2.2",
+    "pryjs": "^1.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
